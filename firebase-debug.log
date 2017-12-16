@@ -1,0 +1,41 @@
+[debug] [2017-12-16T12:41:39.307Z] ----------------------------------------------------------------------
+[debug] [2017-12-16T12:41:39.310Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\swapnil\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2017-12-16T12:41:39.310Z] CLI Version:   3.16.0
+[debug] [2017-12-16T12:41:39.310Z] Platform:      win32
+[debug] [2017-12-16T12:41:39.310Z] Node Version:  v8.9.0
+[debug] [2017-12-16T12:41:39.311Z] Time:          Sat Dec 16 2017 04:41:39 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:39.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-16T12:41:39.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-16T12:41:39.329Z] > authorizing via signed-in user
+[debug] [2017-12-16T12:41:39.331Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gdgsv-demo-33b00  
+  
+ Sat Dec 16 2017 04:41:39 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:39.816Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T12:41:39.817Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gdgsv-demo-33b00/tokens  
+  
+ Sat Dec 16 2017 04:41:39 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:40.240Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\code\gdgsv-demo\firebase-gdgsv-demo'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-12-16T12:41:41.873Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/gdgsv-demo-33b00  
+  
+ Sat Dec 16 2017 04:41:41 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:41.874Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/gdgsv-demo-33b00/apiKeys  
+  
+ Sat Dec 16 2017 04:41:41 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:41.874Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gdgsv-demo-33b00  
+  
+ Sat Dec 16 2017 04:41:41 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:42.222Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T12:41:42.283Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T12:41:42.284Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/222170996086/clients/_:getWebAppConfig  
+  
+ Sat Dec 16 2017 04:41:42 GMT-0800 (Pacific Standard Time)
+[debug] [2017-12-16T12:41:42.400Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T12:41:43.029Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

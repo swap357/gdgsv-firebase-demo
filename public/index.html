@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notice board App</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.8.0/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.8.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.8.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.8.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.8.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- main js -->
+    <script defer src="js/main.js"></script>
+
+  </head>
+  <body>
+
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Notice board</a></li>
+          </ul>
+
+      </div>
+      <div class="uk-navbar-right">
+
+          <ul class="uk-navbar-nav">
+
+              <li id='user_nav'>
+                  <a id="name" href="#"></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li><a href="#">Profile</a></li>
+                          <li><a href="#">Settings</a></li>
+                          <li class="uk-nav-divider"></li>
+                          <li><a id="btn-sign-out" href="#">Logout</a></li>
+                      </ul>
+                  </div>
+              </li>
+
+              <li id='guest_nav'>
+                  <a id="" href="#"></a>
+              </li>
+
+          </ul>
+      </div>
+    </nav>
+
+
+    <div id='main-container' class="uk-card uk-card-default uk-card-body">
+
+      <div id='login-screen'>
+        <h3 class="uk-card-title">
+          <button id='btn-sign-in' class="uk-button uk-button-default">Google sign in</button>
+          <!-- <div id="firebaseui-container"></div> -->
+        </h3>
+      </div>
+
+      <div id='list-screen'>
+        <h3 class="uk-card-title"><a id="js-modal-prompt" class="uk-button uk-button-default" href="#">ADD</a></h3>
+        <div class="uk-card-body" id="items"></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
